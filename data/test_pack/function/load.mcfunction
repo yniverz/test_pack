@@ -1,9 +1,5 @@
 # Runs once when the datapack is (re)loaded.
 
-# Set up a scoreboard objective used by the tick loop.
-scoreboard objectives add tp_timer dummy
-scoreboard players set #seconds tp_timer 0
-
 # Join detection: tp_leave tracks how many times a player has left the game
 # (it increments while they are offline and persists), tp_seen stores the
 # value we last reacted to. When they differ, the player just logged in.
