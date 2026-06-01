@@ -1,0 +1,4 @@
+* text=auto eol=lf
+*.mcfunction text eol=lf
+*.json text eol=lf
+*.mcmeta text eol=lf

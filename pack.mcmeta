@@ -1,0 +1,10 @@
+{
+  "pack": {
+    "pack_format": 61,
+    "description": "test_pack — a working example datapack",
+    "supported_formats": {
+      "min_inclusive": 48,
+      "max_inclusive": 100
+    }
+  }
+}
