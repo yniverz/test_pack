@@ -10,4 +10,9 @@ scoreboard objectives add tp_seen dummy
 scoreboard objectives add tp_rng dummy
 scoreboard objectives add tp_msg dummy
 
+# Approach sequence: tp_appr = current distance (blocks) behind the player while
+# something is "walking toward" them; tp_appt = tick countdown between steps.
+scoreboard objectives add tp_appr dummy
+scoreboard objectives add tp_appt dummy
+
 tellraw @a {"text":"[test_pack] loaded successfully!","color":"green","bold":true}
