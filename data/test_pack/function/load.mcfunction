@@ -15,4 +15,7 @@ scoreboard objectives add tp_msg dummy
 scoreboard objectives add tp_appr dummy
 scoreboard objectives add tp_appt dummy
 
+# tp_cool = ticks remaining until this player's next scare (random 2-10 minutes).
+scoreboard objectives add tp_cool dummy
+
 tellraw @a {"text":"[test_pack] loaded successfully!","color":"green","bold":true}
