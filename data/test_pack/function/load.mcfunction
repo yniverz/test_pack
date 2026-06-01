@@ -6,4 +6,8 @@
 scoreboard objectives add tp_leave minecraft.custom:minecraft.leave_game
 scoreboard objectives add tp_seen dummy
 
+# Haunt system: per-player random rolls so scares are NOT synchronized.
+scoreboard objectives add tp_rng dummy
+scoreboard objectives add tp_msg dummy
+
 tellraw @a {"text":"[test_pack] loaded successfully!","color":"green","bold":true}
