@@ -13,8 +13,9 @@ scoreboard players set @s tp_appt 4
 execute store result storage test_pack:macro dist int 1 run scoreboard players get @s tp_appr
 function test_pack:play_step with storage test_pack:macro
 
-# Move one block closer for the next step.
-scoreboard players remove @s tp_appr 1
+# Move several blocks closer for the next step, so the whole approach is only
+# about 2-3 footsteps before it reaches you.
+scoreboard players remove @s tp_appr 5
 
 # When it reaches the player, do the final close scare and end the sequence.
 execute if score @s tp_appr matches ..0 run function test_pack:approach_end
